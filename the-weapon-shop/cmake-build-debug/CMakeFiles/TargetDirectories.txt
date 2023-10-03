@@ -1,0 +1,3 @@
+C:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/cmake-build-debug/CMakeFiles/the_weapon_shop.dir
+C:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

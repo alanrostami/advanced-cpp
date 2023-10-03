@@ -1,0 +1,4 @@
+# ninja log v5
+1	118	7180376779627623	build.ninja	d1dc137e00596d05
+0	336	7180376783599712	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+339	422	7180376784440068	the_weapon_shop.exe	579f91c0da633d3b
