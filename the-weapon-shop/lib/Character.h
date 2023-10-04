@@ -20,7 +20,7 @@ private:
     int mLifePoints;
 
     //Weapon mWeapon;
-    WeaponType mWeaponType;
+    //WeaponType mWeaponType;
     //Race mRace;
     //CharacterClass mCharacterClass;
 
@@ -30,7 +30,7 @@ public:
 
     void GetCharacterInfo() const;
 
-    int BuyWeapon();
+    static int BuyWeapon();
 
     //void SetCharacterWeapon(Weapon weapon);
     //void SetCharacterRace(CharacterRace race);

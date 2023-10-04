@@ -10,19 +10,20 @@ using namespace std;
 class Merchant
 {
 private:
-    string name;
-    string shopName;
-    string description;
-    string catchPhrase;
-    int money;
+    string mName;
+    string mShopName;
+    string mDescription;
+    string mCatchPhrase;
+    int mMoney{};
 
-    int inventory[0];
+    int mInventory[0];
 
 public:
-    void BuyWeapon(int weapon, Character customer, int weaponCost);
-    void SellWeapon(int weapon, Character customer, int weaponCost);
+    Merchant(string name, string shopName, string description, string catchPhrase, int money, int *inventory);
+    ~Merchant();
+
+    void BuyWeapon(int weapon, Character& customer, int weaponCost);
+    void SellWeapon(int weapon, Character& customer, int weaponCost);
 };
-
-
 
 #endif
