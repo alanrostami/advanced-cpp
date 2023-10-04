@@ -55,6 +55,24 @@ build CMakeFiles/the_weapon_shop.dir/main.cpp.obj: CXX_COMPILER__the_weapon_shop
   OBJECT_DIR = CMakeFiles\the_weapon_shop.dir
   OBJECT_FILE_DIR = CMakeFiles\the_weapon_shop.dir
 
+build CMakeFiles/the_weapon_shop.dir/lib/Character.cpp.obj: CXX_COMPILER__the_weapon_shop_unscanned_Debug C$:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/lib/Character.cpp || cmake_object_order_depends_target_the_weapon_shop
+  DEP_FILE = CMakeFiles\the_weapon_shop.dir\lib\Character.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\the_weapon_shop.dir
+  OBJECT_FILE_DIR = CMakeFiles\the_weapon_shop.dir\lib
+
+build CMakeFiles/the_weapon_shop.dir/lib/Weapon.cpp.obj: CXX_COMPILER__the_weapon_shop_unscanned_Debug C$:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/lib/Weapon.cpp || cmake_object_order_depends_target_the_weapon_shop
+  DEP_FILE = CMakeFiles\the_weapon_shop.dir\lib\Weapon.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\the_weapon_shop.dir
+  OBJECT_FILE_DIR = CMakeFiles\the_weapon_shop.dir\lib
+
+build CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj: CXX_COMPILER__the_weapon_shop_unscanned_Debug C$:/Users/milad.rostami/Documents/GitHub/advanced-cpp/the-weapon-shop/lib/Merchant.cpp || cmake_object_order_depends_target_the_weapon_shop
+  DEP_FILE = CMakeFiles\the_weapon_shop.dir\lib\Merchant.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\the_weapon_shop.dir
+  OBJECT_FILE_DIR = CMakeFiles\the_weapon_shop.dir\lib
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target the_weapon_shop
@@ -63,7 +81,7 @@ build CMakeFiles/the_weapon_shop.dir/main.cpp.obj: CXX_COMPILER__the_weapon_shop
 #############################################
 # Link the executable the_weapon_shop.exe
 
-build the_weapon_shop.exe: CXX_EXECUTABLE_LINKER__the_weapon_shop_Debug CMakeFiles/the_weapon_shop.dir/main.cpp.obj
+build the_weapon_shop.exe: CXX_EXECUTABLE_LINKER__the_weapon_shop_Debug CMakeFiles/the_weapon_shop.dir/main.cpp.obj CMakeFiles/the_weapon_shop.dir/lib/Character.cpp.obj CMakeFiles/the_weapon_shop.dir/lib/Weapon.cpp.obj CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\the_weapon_shop.dir

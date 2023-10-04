@@ -1,4 +1,24 @@
 # ninja log v5
-1	118	7180376779627623	build.ninja	d1dc137e00596d05
-0	336	7180376783599712	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
-339	422	7180376784440068	the_weapon_shop.exe	579f91c0da633d3b
+2	336	7181040342595724	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+1	111	7181082748891287	build.ninja	d1dc137e00596d05
+337	401	7181040343214068	the_weapon_shop.exe	436fa046b71f46ce
+4	351	7181038015622492	CMakeFiles/the_weapon_shop.dir/src/start.cpp.obj	3d278e8f7b980258
+5	398	7181037429409385	CMakeFiles/the_weapon_shop.dir/src/StartHere.cpp.obj	3ef05a6f60ba0a8a
+11	382	7181083499186679	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+6	428	7181083499643921	CMakeFiles/the_weapon_shop.dir/lib/Character.cpp.obj	51e02e8b7ca5e3f0
+12	399	7181091658387847	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+2	442	7181091658816937	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+12	395	7181097854174239	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+6	455	7181097854769419	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+11	384	7181099926926870	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+5	426	7181099927339076	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+11	407	7181111602124616	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+12	385	7181111862898880	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+2	435	7181111863387535	CMakeFiles/the_weapon_shop.dir/lib/Character.cpp.obj	51e02e8b7ca5e3f0
+9	401	7181113348394476	CMakeFiles/the_weapon_shop.dir/lib/Merchant.cpp.obj	4382408b1352564
+2	425	7181113348633807	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+6	431	7181113348703634	CMakeFiles/the_weapon_shop.dir/lib/Character.cpp.obj	51e02e8b7ca5e3f0
+2	361	7181113997590948	CMakeFiles/the_weapon_shop.dir/lib/Weapon.cpp.obj	c246e24cafb777ad
+362	501	7181113998969213	the_weapon_shop.exe	85ed249b2e0f9f58
+2	386	7181114663152480	CMakeFiles/the_weapon_shop.dir/main.cpp.obj	6dc3c3f2a88a4a4e
+387	461	7181114663870298	the_weapon_shop.exe	85ed249b2e0f9f58

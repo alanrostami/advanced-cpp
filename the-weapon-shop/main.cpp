@@ -1,6 +1,8 @@
-#include <iostream>
+#include "src/GameUtility.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Start();
     return 0;
 }
