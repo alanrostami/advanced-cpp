@@ -27,6 +27,7 @@ int Character::BuyWeapon()
     cout << "2. Dagger" << endl;
     cout << "3. Staff" << endl;
     cout << "4. Sword" << endl;
+    
     int weaponInput;
     cin >> weaponInput;
 

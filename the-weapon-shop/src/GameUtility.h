@@ -24,22 +24,9 @@ static void Start()
     cout << "All is set! Now, go buy a weapon from the merchant." << endl;
 
     firstChar.GetCharacterInfo();
-    int playerChoice = firstChar.BuyWeapon();
+    int playerChoice = Character::BuyWeapon();
 
     WeaponType weapon;
-
-    switch (playerChoice) {
-        case 1:
-            weapon = WeaponType::Bow;
-            break;
-        case 2:
-            weapon = WeaponType::Dagger;
-            break;
-        case 3:
-            weapon = WeaponType::Staff;
-        case 4:
-            weapon = WeaponType::Sword;
-    }
 
     int price = Weapon::GetWeaponPrice(weapon);
 
