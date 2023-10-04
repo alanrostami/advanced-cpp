@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include "../lib/Character.h"
+#include "../lib/Weapon.h"
+#include "../lib/WeaponType.h"
 
 static void Start()
 {
@@ -16,13 +18,30 @@ static void Start()
     cout << "What is your catch phrase?" << endl;
     cin >> cPhrase;
 
-    Character newChar = Character(inpName, inpLastName, cPhrase, 200, 5);
+    Character firstChar = Character(inpName, inpLastName, cPhrase, 200, 5);
 
     cout << "Hello " + inpName + " " + inpLastName << endl;
     cout << "All is set! Now, go buy a weapon from the merchant." << endl;
 
-    newChar.GetCharacterInfo();
-    int weaponBought = newChar.BuyWeapon();
+    firstChar.GetCharacterInfo();
+    int playerChoice = firstChar.BuyWeapon();
 
-    cout << weaponBought;
+    WeaponType weapon;
+
+    switch (playerChoice) {
+        case 1:
+            weapon = WeaponType::Bow;
+            break;
+        case 2:
+            weapon = WeaponType::Dagger;
+            break;
+        case 3:
+            weapon = WeaponType::Staff;
+        case 4:
+            weapon = WeaponType::Sword;
+    }
+
+    int price = Weapon::GetWeaponPrice(weapon);
+
+    cout << price;
 }

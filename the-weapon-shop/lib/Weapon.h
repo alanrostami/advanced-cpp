@@ -11,18 +11,19 @@ class Weapon
 private:
     string mWeaponName;
     string mDescription;
+
+    WeaponType mWeaponType;
+
     int mWeight;
     int mDamage;
     int mCost;
     float mDurability;
-    WeaponType mWeaponType;
 
 public:
-    Weapon(string weaponName, string description, int weight, int damage, int cost, int durability, WeaponType weaponType);
+    Weapon(string weaponName, string description, int weight, int damage, int cost, float durability, WeaponType weaponType);
     ~Weapon();
 
-    void GetWeapon();
+    static int GetWeaponPrice(WeaponType weaponType);
 };
-
 
 #endif
