@@ -23,7 +23,9 @@ public:
     Weapon(string weaponName, string description, int weight, int damage, int cost, float durability, WeaponType weaponType);
     ~Weapon();
 
-    static int GetWeaponPrice(WeaponType weaponType);
+    // void ShowOneWeapon(string weaponName, WeaponType weaponType);
+
+    static int GetWeaponPrice(string weaponName, WeaponType weaponType, int weight, int damage, int durability);
 };
 
 #endif
