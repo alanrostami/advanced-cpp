@@ -31,8 +31,12 @@ void StartNewGame()
     Weapon thirdWeapon("Hidden Justice", "The bow whose arrows go farthest.",
                         WeaponType::Bow, 1, 2, 110.0f, 0.8 );
 
+    // Add the weapons to merchant inventory
+    Yaktod.SetInventory(firstWeapon);
+
+    Yaktod.GetInventory();
 
     RalfTheElf.Introduce();
 
-    RalfTheElf.BuyWeapon();
+    RalfTheElf.BuyWeapon(Yaktod, firstWeapon);
 }

@@ -57,7 +57,7 @@ void Merchant::BuyWeapon(Character& character, Weapon& chara_weapon)
     std::cin >> weapon_choice;
 }
 
-//void Merchant::SellWeapon(Character& character, Weapon& chara_weapon)
-//{
+void Merchant::SellWeapon(Character& character, Weapon& chara_weapon)
+{
 
-//}
+}

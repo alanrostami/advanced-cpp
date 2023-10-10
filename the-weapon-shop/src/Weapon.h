@@ -7,7 +7,6 @@
 class Weapon
 {
 private:
-    std::string m_name;
     std::string m_description;
     WeaponType m_type;
     int m_weight;
@@ -20,4 +19,6 @@ public:
     Weapon(std::string name, std::string description,
            WeaponType type, int weight, int damage, float cost, float durability);
     ~Weapon();
+
+    std::string m_name;
 };

@@ -34,7 +34,7 @@ public:
     std::string GetPhrase();
     int GetMoney();
     int GetLifePoints();
-    std::vector<Weapon> GetWeapon();
+    std::string GetWeapon();
     std::string GetRace();
     std::string GetCharaClass();
 

@@ -31,5 +31,5 @@ public:
     std::vector<Weapon> GetInventory();
 
     void BuyWeapon(Character& character, Weapon& chara_weapon); // from Character
-    //void SellWeapon(Character& character, Weapon& chara_weapon); // to Character
+    void SellWeapon(Character& character, Weapon& chara_weapon); // to Character
 };

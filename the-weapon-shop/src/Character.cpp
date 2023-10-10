@@ -41,9 +41,9 @@ int Character::GetLifePoints()
     return m_life_points;
 }
 
-std::vector<Weapon> Character::GetWeapon()
+std::string Character::GetWeapon()
 {
-    return m_weapon;
+    return m_weapon[0].m_name;
 }
 
 std::string Character::GetRace()
@@ -100,6 +100,13 @@ void Character::BuyWeapon(Merchant& merch_shop, Weapon& merch_weapon)
     std::cout << "3. Staff" << std::endl;
     std::cout << "4. Sword" << std::endl;
     std::cin >> weapon_choice;
+
+    //merch_shop.SellWeapon(character, merch_weapon);
+    m_weapon.push_back(merch_weapon);
+
+    std::string chara_weapon = Character::GetWeapon();
+
+    std::cout << chara_weapon << std::endl;
 }
 
 void Character::SellWeapon(Merchant& merch_shop, Weapon& merch_weapon)
