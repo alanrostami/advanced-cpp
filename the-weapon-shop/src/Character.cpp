@@ -14,7 +14,6 @@ Character::Character(const std::string& first_name,
     m_catch_phrase = catch_phrase;
     m_money = money;
     m_life_points = life_points;
-    //m_weapon = weapon;
     m_race = ch_race;
     m_class = ch_class;
 }
@@ -39,6 +38,10 @@ int Character::GetMoney()
 int Character::GetLifePoints()
 {
     return m_life_points;
+}
+
+void Character::SetWeapon(Weapon weapon) {
+    m_weapon.push_back(weapon);
 }
 
 std::string Character::GetWeapon()
@@ -67,6 +70,7 @@ std::string Character::GetRace()
 std::string Character::GetCharaClass()
 {
     std::string chara_class;
+
     switch (m_class) {
         case CharaClass::Archer:
             return "Archer";
@@ -88,25 +92,38 @@ void Character::Introduce()
     std::cout << "My catch phrase is " << Character::GetPhrase() << std::endl;
 }
 
-void Character::BuyWeapon(Merchant& merch_shop, Weapon& merch_weapon)
+WeaponType Character::ChooseWeaponType(int weapon)
 {
-    merch_shop.GetInventory();
+    switch (weapon) {
+        case 1:
+            return WeaponType::Bow;
+        case 2:
+            return WeaponType::Dagger;
+        case 3:
+            return WeaponType::Staff;
+        case 4:
+            return WeaponType::Sword;
+        default:
+            break;
+    }
+}
 
-    int weapon_choice;
+void Character::BuyWeapon(Character& character, Merchant& merch_shop, Weapon& merch_weapon)
+{
+    if (character.m_money >= merch_weapon.m_cost)
+    {
+        m_weapon.push_back(merch_weapon);
+        merch_shop.SellWeapon(character,merch_weapon);
+        std::string chara_weapon = Character::GetWeapon();
+        std::cout << "Congrats! You bought " << chara_weapon << std::endl;
+    } else {
+        std::cout << "You don't have enough money." << std::endl;
+    }
 
-    std::cout << "Choose a weapon:" << std::endl;
-    std::cout << "1. Bow" << std::endl;
-    std::cout << "2. Dagger" << std::endl;
-    std::cout << "3. Staff" << std::endl;
-    std::cout << "4. Sword" << std::endl;
-    std::cin >> weapon_choice;
 
-    //merch_shop.SellWeapon(character, merch_weapon);
-    m_weapon.push_back(merch_weapon);
 
-    std::string chara_weapon = Character::GetWeapon();
 
-    std::cout << chara_weapon << std::endl;
+
 }
 
 void Character::SellWeapon(Merchant& merch_shop, Weapon& merch_weapon)
@@ -123,3 +140,6 @@ void Character::Loot(Character& defeated)
 {
 
 }
+
+
+

@@ -25,22 +25,24 @@ public:
     Character(const std::string& first_name,
               const std::string& last_name,
               const std::string& catch_phrase,
-              int money, int life_points, /* std::vector<Weapon> weapon, */
+              int money, int life_points, /*std::vector<Weapon> weapon,*/
               CharaRace ch_race, CharaClass ch_class);
 
-    //~Character() = default;
+    ~Character() = default;
 
     std::string GetName();
     std::string GetPhrase();
     int GetMoney();
     int GetLifePoints();
+    void SetWeapon(Weapon weapon);
     std::string GetWeapon();
     std::string GetRace();
     std::string GetCharaClass();
 
     void Introduce();
 
-    void BuyWeapon(Merchant& merch_shop, Weapon& merch_weapon); // from Merchant
+    WeaponType ChooseWeaponType(int weapon);
+    void BuyWeapon(Character& character, Merchant& merch_shop, Weapon& merch_weapon); // from Merchant
     void SellWeapon(Merchant& merch_shop, Weapon& merch_weapon); // to Merchant
     void UseWeapon(Character& enemy); // to deal damage to another character
     void Loot(Character& defeated); // money and weapon of a defeated Character

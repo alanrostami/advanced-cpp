@@ -17,3 +17,8 @@ Weapon::Weapon(std::string name, std::string description,
 }
 
 Weapon::~Weapon() {}
+
+WeaponType Weapon::GetType()
+{
+    return m_type;
+}

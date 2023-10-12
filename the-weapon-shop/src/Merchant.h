@@ -28,6 +28,7 @@ public:
     int GetMoney();
 
     void SetInventory(Weapon weapon);
+    void DisplayInventory();
     std::vector<Weapon> GetInventory();
 
     void BuyWeapon(Character& character, Weapon& chara_weapon); // from Character
